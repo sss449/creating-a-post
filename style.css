@@ -54,3 +54,101 @@
 .des:focus {
     border-color: #666;
 }
+.time-card input {
+    display: none; /* Это полностью убирает стандартные кружки */
+}
+
+/* Остальные стили для красоты */
+.schedule-section {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.section-title {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.time-grid {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.time-card span {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #eee;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid #ddd;
+}
+
+/* Когда кнопка выбрана — меняем цвет фона текста */
+.time-card input:checked + span {
+    background: #000000;
+    color: #fff;
+    border-color: #000000;
+}
+
+
+
+
+
+
+.boost-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 250px;
+}
+
+.boost-card input {
+    display: none; /* Прячем стандартные кружки */
+}
+
+.boost-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: sans-serif;
+}
+
+.boost-time {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+
+.boost-time small {
+    color: #000000; /* Зеленый цвет для скидки */
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+.boost-price {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* Стили при выборе */
+.boost-card input:checked + .boost-info {
+    background: #e7f1ff;
+    border-color: #000000;
+    box-shadow: 0 2px 5px rgba(0,123,255,0.1);
+}
+
+.boost-card input:checked + .boost-info .boost-time {
+    color: #000000;
+}
+
