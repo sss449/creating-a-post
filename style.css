@@ -54,6 +54,7 @@
 .des:focus {
     border-color: #666;
 }
+
 .time-card input {
     display: none; /* Это полностью убирает стандартные кружки */
 }
@@ -151,4 +152,3 @@
 .boost-card input:checked + .boost-info .boost-time {
     color: #000000;
 }
-
