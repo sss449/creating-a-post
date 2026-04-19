@@ -1,7 +1,7 @@
  .list {
     width: 90%;
     max-width: 330px;
-    height: 450px;
+    height: 480px;
     margin: 110px auto;
     background: #ffffff;
     border-radius: 20px;
@@ -56,10 +56,10 @@
 }
 
 .time-card input {
-    display: none; /* Это полностью убирает стандартные кружки */
+    display: none; 
 }
 
-/* Остальные стили для красоты */
+
 .schedule-section {
     margin-top: 10px;
     font-family: sans-serif;
@@ -88,27 +88,37 @@
     border: 1px solid #ddd;
 }
 
-/* Когда кнопка выбрана — меняем цвет фона текста */
+
 .time-card input:checked + span {
     background: #000000;
     color: #fff;
     border-color: #000000;
 }
 
-
-
-
-
-
 .boost-grid {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    max-width: 250px;
+   
+    width: 100%; 
+    max-width: 100%; 
+    
+    max-height: 88px; 
+    overflow-y: auto;
+    padding-right: 8px; 
 }
 
+.boost-grid::-webkit-scrollbar {
+    width: 4px;
+}
+.boost-grid::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+
 .boost-card input {
-    display: none; /* Прячем стандартные кружки */
+    display: none;  
 }
 
 .boost-info {
@@ -131,7 +141,7 @@
 }
 
 .boost-time small {
-    color: #000000; /* Зеленый цвет для скидки */
+    color: #000000; 
     font-weight: bold;
     margin-left: 4px;
 }
@@ -142,7 +152,7 @@
     color: #000000;
 }
 
-/* Стили при выборе */
+
 .boost-card input:checked + .boost-info {
     background: #e7f1ff;
     border-color: #000000;
@@ -151,4 +161,26 @@
 
 .boost-card input:checked + .boost-info .boost-time {
     color: #000000;
+} 
+.go {
+   background-color: black;
+   color: white;
+   border-radius: 14px;
+   position: relative;
+   top: 22px;
+   left: 85px;
+   font-size: 14px;
+   font-weight: 500;
+   letter-spacing: 0.02em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+   padding: 5px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+   transition: transform 0.2s ease;
 }
+.go:hover {
+    transform: translateY(-1px)
+}
+
+
+
+
